@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="apple-touch-icon"
@@ -26,6 +30,444 @@
     <title>Dart</title>
   </head>
   <body>
-    <h1>hello</h1>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="header__nav">
+            <div class="nav__logo logo">
+              <a href="#"><img src="./img/logo.svg" alt="#" /></a>
+              <a href="#">
+                <span>Dart</span> <br />
+                Service Manager
+              </a>
+            </div>
+            <div class="nav__menu">
+              <ul class="menu-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Exctention</a></li>
+              </ul>
+            </div>
+            <div class="nav__sign-up">
+              <a href="#" class="btn sign-up">Sign Up</a>
+            </div>
+            <div class="nav__burger" style="display: none"></div>
+          </div>
+        </nav>
+        <div class="header__intro green-theme">
+          <div class="intro__content_left left-green">
+            <h1>Lorem Ipsum Dolor Sit Amet</h1>
+            <p>
+              Welcome to our page dedicated to greatest web-desing ever. Here
+              you will found a lot of interesting posts and videos
+            </p>
+            <div class="intro__button">
+              <a href="#" class="btn dark">Buy now</a>
+              <a href="#" class="btn light">Try for free</a>
+            </div>
+          </div>
+          <div class="intro__content_right">
+            <div class="intro__video" id="vid">
+              <video src="./img/video.mp4" controls>
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <div class="video__start"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="tools">
+        <div class="tools__title title">
+          <h2>Easy & Useful</h2>
+          <p class="subtitle">Project managment tool</p>
+          <p class="text">
+            Welcome to our page dedicated to, here is just a letter for place
+            greatest web-desing ever. Here you will, cause i don’t know what to
+            right, found a lot of interesting posts and videos
+          </p>
+        </div>
+        <div class="tools__items">
+          <div class="tools__item">
+            <img src="./img/calendar.svg" alt="picture" />
+            <h3>Title Goes here</h3>
+            <p class="text small">
+              Welcome to our page dedicated to greatest web-desing ever. Here
+              you will found a lot of interesting posts and videos
+            </p>
+          </div>
+          <div class="tools__item">
+            <img src="./img/man.svg" alt="picture" />
+            <h3>Title Goes here</h3>
+            <p class="text small">
+              Welcome to our page dedicated to greatest web-desing ever. Here
+              you will found a lot of interesting posts and videos
+            </p>
+          </div>
+          <div class="tools__item">
+            <img src="./img/swat.svg" alt="picture" />
+            <h3>Title Goes here</h3>
+            <p class="text small">
+              Welcome to our page dedicated to greatest web-desing ever. Here
+              you will found a lot of interesting posts and videos
+            </p>
+          </div>
+        </div>
+        <a href="#" class="btn rounded">Get Started</a>
+        <div class="tools__stat">
+          <div class="stat__item">
+            <img src="./img/stat.svg" alt="tool" />
+            <p class="subtitle white">
+              1.200.000 <br />
+              Bussines
+            </p>
+          </div>
+          <div class="stat__item">
+            <img src="./img/downloads.svg" alt="tool" />
+            <p class="subtitle white">
+              1.200.000 <br />
+              Downloads
+            </p>
+          </div>
+          <div class="stat__item">
+            <img src="./img/person.svg" alt="tool" />
+            <p class="subtitle white">
+              1.200.000 <br />
+              Free Installs
+            </p>
+          </div>
+          <div class="stat__item">
+            <img src="./img/downloads.svg" alt="tool" />
+            <p class="subtitle white">
+              1.200.000 <br />
+              Pro Users
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services__title title">
+          <h2>Services</h2>
+          <p class="subtitle">
+            Here is part of page to explain you about our services, keep
+            scrolling
+          </p>
+        </div>
+        <div class="services__items">
+          <div class="services__item active">
+            <div class="item__title">
+              <img src="./img/arrow-up.svg" alt="icon" />
+              <h4>Statistics</h4>
+              <span class="end"><i class="fas fa-caret-down"></i></span>
+            </div>
+            <div class="item__content">
+              <img src="./img/statistic.webp" alt="photo" />
+              <div class="service__text">
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course on English. End.
+                </p>
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="item__title">
+              <img src="./img/mail.svg" alt="icon" />
+              <h4>InBox</h4>
+              <span class="end"><i class="fas fa-caret-down"></i></span>
+            </div>
+            <div class="item__content">
+              <img src="./img/statistic.webp" alt="photo" />
+              <div class="service__text">
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course on English. End.
+                </p>
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="item__title">
+              <img src="./img/people.svg" alt="icon" />
+              <h4>Team</h4>
+              <span class="end"><i class="fas fa-caret-down"></i></span>
+            </div>
+            <div class="item__content">
+              <img src="./img/statistic.webp" alt="photo" />
+              <div class="service__text">
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course on English. End.
+                </p>
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="item__title">
+              <img src="./img/set.svg" alt="icon" />
+              <h4>Settings</h4>
+              <span class="end"><i class="fas fa-caret-down"></i></span>
+            </div>
+            <div class="item__content">
+              <img src="./img/statistic.webp" alt="photo" />
+              <div class="service__text">
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course on English. End.
+                </p>
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="item__title">
+              <img src="./img/feed.svg" alt="icon" />
+              <h4>Feed</h4>
+              <span class="end"><i class="fas fa-caret-down"></i></span>
+            </div>
+            <div class="item__content">
+              <img src="./img/statistic.webp" alt="photo" />
+              <div class="service__text">
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course on English. End.
+                </p>
+                <p class="item__p">
+                  And again, here we are a just for random text i tired to
+                  created something new, and of course
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback green-theme">
+        <div class="feedback__content_left left-green">
+          <h2>What our customers have to say about us</h2>
+          <p>
+            Yes, finaly they add some text here. bla bla bla thanks God, just
+            thanks
+          </p>
+          <div class="intro button">
+            <a href="#" class="btn dark">Get started</a>
+          </div>
+        </div>
+        <div class="feedback__right">
+          <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <img src="./img/avatar_s1.webp" alt="avatar" />
+                  <div class="comment">
+                    <h4>John Doe</h4>
+                    <p class="item_p">
+                      Here we again. Again without any text, whyyy? I don’t
+                      know. Is it good feedback for you? What? Okay Forget about
+                      this.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <img src="./img/avatar_s2.webp" alt="avatar" />
+                  <div class="comment">
+                    <h4>Khalessi</h4>
+                    <p class="item_p">
+                      Here we again. Again without any text, whyyy? I don’t
+                      know. Is it good feedback for you? What? Okay Forget about
+                      this.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <img src="./img/avatar_s3.webp" alt="avatar" />
+                  <div class="comment">
+                    <h4>Harold Snow</h4>
+                    <p class="item_p">
+                      Here we again. Again without any text, whyyy? I don’t
+                      know. Is it good feedback for you? What? Okay Forget about
+                      this.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="team__title title">
+          <h2>Our team</h2>
+          <p class="subtitle">
+            Yes, finaly they add some text here. <br />
+            thanks God, just thanks
+          </p>
+        </div>
+        <div class="team__slider swiper-container swiper2">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="team__member">
+                <div class="avatar">
+                  <img src="./img/avatar2.webp" alt="avatar" />
+                </div>
+                <h3>Sophie Turner</h3>
+                <p class="subtitle">
+                  Yes, finaly they add some text here. thanks God, just thanks
+                  <br />
+                  Hey, it’s me again. Again no any text
+                </p>
+                <ul class="social">
+                  <li class="link">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li class="link">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li class="link"><a href="#">All social media</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team__member">
+                <div class="avatar">
+                  <img src="./img/avatar1.webp" alt="avatar" />
+                </div>
+
+                <h3>Tom Hanks</h3>
+                <p class="subtitle">
+                  Yes, finaly they add some text here. thanks God, just thanks
+                  <br />
+                  Hey, it’s me again. Again no any text
+                </p>
+                <ul class="social">
+                  <li class="link">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li class="link">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li class="link"><a href="#">All social media</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team__member">
+                <div class="avatar">
+                  <img src="./img/avatar3.webp" alt="avatar" />
+                </div>
+
+                <h3>Jack Nicholson</h3>
+                <p class="subtitle">
+                  Yes, finaly they add some text here. <br />
+                  thanks God, just thanks
+                  <br />
+                  Hey, it’s me again. Again no any text
+                </p>
+                <ul class="social">
+                  <li class="link">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li class="link">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li class="link"><a href="#">All social media</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__title title">
+          <h2>Contact us</h2>
+          <p class="subtitle">
+            Yes, finaly they add some text here. <br />
+            thanks God, just thanks
+          </p>
+        </div>
+        <form class="contact__form">
+          <input type="text" name="first-name" placeholder="First Name" />
+          <input type="text" name="last-name" placeholder="Last Name" />
+          <input type="tel" name="contact" placeholder="Contact" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="text" name="message" id="name" placeholder="Message" />
+          <div>
+            <input
+              type="checkbox"
+              name="news"
+              aria-label="Subscribe to the newsletter"
+            />
+            <label for="#name">Subscribe to the newsletter</label>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <footer>
+        <div class="footer__logo logo">
+          <a href="#"><img src="./img/logo.svg" alt="#" /></a>
+          <a href="#">
+            Dart <br />
+            Service Manager
+          </a>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Exctention</a></li>
+        </ul>
+        <ul class="footer__addition">
+          <li class="add__item"><a href="#">Privacy policy</a></li>
+          <li class="add__item"><a href="#">About us</a></li>
+          <li class="add__item"><a href="#">About company</a></li>
+        </ul>
+        <ul class="social">
+          <li class="link">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="link">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="link">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

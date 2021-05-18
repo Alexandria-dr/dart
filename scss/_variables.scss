@@ -1,0 +1,24 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$gray: #a6a6a6;
+$light-gray: #c9c5c5;
+$black-btn: #1e1630e0;
+$blue1: #03cdcd;
+$blue2: #119bff;
+$blue3: #849efc;
+$pink: #ff6acc;
+$green: #31613b;
+$green-hover: #00bd29;
+$white-bg: #f6f6f6;
+$before: #d7c8c8;
+$pre-footer: #fafafa;
+$red: #bc5757;
+$light-green: #19ef6f;
+$purple: #2a1e43;
