@@ -249,6 +249,10 @@
     .footer__addition {
       margin-top: 20px;
     }
+    .footer__about {
+      grid-column: 1/2;
+      grid-template-columns: 1fr;
+    }
   }
 }
 
