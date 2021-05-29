@@ -78,7 +78,7 @@ const swiper2 = new Swiper('.swiper2', {
 
 
 
-const mm = window.matchMedia('(min-width: 640px)');
+const mm = window.matchMedia('(min-width: 760px)');
 
 window.addEventListener('load', function () {
 
