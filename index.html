@@ -36,7 +36,7 @@
           <div class="header__nav">
             <div class="nav__logo logo">
               <a href="#"><img src="./img/logo.svg" alt="#" /></a>
-              <a href="#">
+              <a class="logo__text" href="#">
                 <span>Dart</span> <br />
                 Service Manager
               </a>
@@ -53,7 +53,21 @@
             <div class="nav__sign-up">
               <a href="#" class="btn sign-up">Sign Up</a>
             </div>
-            <div class="nav__burger" style="display: none"></div>
+            <div class="menu__phone">
+              <ul class="menu-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Exctention</a></li>
+                <li>
+                  <a href="#" class="btn sign-up">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__burger">
+              <span></span>
+            </div>
           </div>
         </nav>
         <div class="header__intro green-theme">
@@ -335,7 +349,8 @@
                 </div>
                 <h3>Sophie Turner</h3>
                 <p class="subtitle">
-                  Yes, finaly they add some text here. thanks God, just thanks
+                  Yes, finaly they add some text here. <br />
+                  thanks God, just thanks
                   <br />
                   Hey, it’s me again. Again no any text
                 </p>
@@ -361,7 +376,8 @@
 
                 <h3>Tom Hanks</h3>
                 <p class="subtitle">
-                  Yes, finaly they add some text here. thanks God, just thanks
+                  Yes, finaly they add some text here. <br />
+                  thanks God, just thanks
                   <br />
                   Hey, it’s me again. Again no any text
                 </p>
@@ -407,6 +423,7 @@
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="contact">
@@ -422,9 +439,10 @@
           <input type="text" name="last-name" placeholder="Last Name" />
           <input type="tel" name="contact" placeholder="Contact" />
           <input type="email" name="email" placeholder="Email" />
-          <input type="text" name="message" id="name" placeholder="Message" />
+          <textarea name="message" rows="7" placeholder="Message"></textarea>
           <div>
             <input
+              id="name"
               type="checkbox"
               name="news"
               aria-label="Subscribe to the newsletter"
@@ -438,7 +456,7 @@
         <div class="footer__logo logo">
           <a href="#"><img src="./img/logo.svg" alt="#" /></a>
           <a href="#">
-            Dart <br />
+            <span> Dart </span> <br />
             Service Manager
           </a>
         </div>
