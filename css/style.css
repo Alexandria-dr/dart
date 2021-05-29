@@ -620,6 +620,7 @@ h4 {
 
 .feedback__right {
   position: relative;
+  padding-left: 20px;
 }
 
 .feedback__content_left h2 {
@@ -1228,6 +1229,10 @@ footer .footer__about p:last-child {
 }
 
 @media (max-width: 1000px) {
+  .header__nav.is-scroll .logo a {
+    font-size: 1.2rem;
+    padding-right: 20px;
+  }
   .nav__menu li a {
     font-size: 1.1rem;
   }
@@ -1250,6 +1255,9 @@ footer .footer__about p:last-child {
   .header__intro :first-child,
   .header__intro :last-child {
     width: 100%;
+  }
+  .feedback__right {
+    padding-left: 0px;
   }
   .services__items {
     margin-top: 20px;
@@ -1277,6 +1285,15 @@ footer .footer__about p:last-child {
   }
   .item__content .service__text p {
     font-size: 1.1rem;
+  }
+  .feedback {
+    padding: 50px 20px;
+  }
+  .feedback h2 {
+    margin-top: 0;
+  }
+  .feedback__content_left {
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
