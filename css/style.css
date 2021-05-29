@@ -226,6 +226,7 @@ header,
 
 .logo img {
   width: 50px;
+  height: 100%;
 }
 
 .logo a img {
@@ -412,7 +413,7 @@ header,
 
 .tools__item img {
   height: 160px;
-  width: auto;
+  width: 100%;
 }
 
 h3 {
@@ -437,6 +438,9 @@ h3 {
   -ms-grid-columns: 1.5fr 2fr;
       grid-template-columns: 1.5fr 2fr;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 20px;
 }
 
@@ -450,8 +454,9 @@ h3 {
 }
 
 .stat__item img {
-  max-width: 60px;
-  width: auto;
+  max-width: 50px;
+  width: 100%;
+  height: 50px;
 }
 
 .stat__item:first-child {
@@ -710,6 +715,7 @@ h4 {
 .team .team__member img {
   border-radius: 50%;
   width: 130px;
+  height: 100%;
 }
 
 .team .team__member p {
@@ -775,6 +781,7 @@ h4 {
 
 .team .swiper-slide.swiper-slide-active .team__member img {
   width: 180px;
+  height: 100%;
 }
 
 .team .swiper-slide.swiper-slide-active .team__member h3,
