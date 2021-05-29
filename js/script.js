@@ -34,54 +34,38 @@ navButton.addEventListener('click', e => {
   document.querySelector('body').classList.toggle('lock')
 })
 
-function initDisplay() {
+
   const swiper = new Swiper('.swiper1', {
-    direction: 'vertical',
-    slidesPerView: 2,
+    direction: 'horizontal',
     loop: true,
-    freeMode:true,
+    slidesPerView: 1,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
+    },
+    breakpoints:{
+      900:{
+        direction: 'vertical',
+        slidesPerView: 2,
+        freeMode:true,
+      }
     }
   });
   
   const swiper2 = new Swiper('.swiper2', {
-    slidesPerView: 3,
-    loop: true,
-    centeredSlides: true,
-    slideToClickedSlide: true
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    
+    breakpoints:{
+      760:{
+        slidesPerView: 3,
+        loop: true,
+        centeredSlides: true,
+        slideToClickedSlide: true,
+        pagination: false,
+      }
+    }
   });
-}
-
-
-function initScreen() {
-const swiper = new Swiper('.swiper1', {
-  direction: 'vertical',
-  slidesPerView: 1,
-  freeMode:true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
-
-const swiper2 = new Swiper('.swiper2', {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-});
-}
-
-
-
-
-const mm = window.matchMedia('(min-width: 760px)');
-
-window.addEventListener('load', function () {
-
-  mm.matches ? initDisplay() : initScreen()
-
-});

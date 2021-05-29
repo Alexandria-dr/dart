@@ -978,6 +978,79 @@ footer .footer__about p:last-child {
   color: #7e1b1b;
 }
 
+@media (max-width: 1000px) {
+  .header__nav.is-scroll .logo a {
+    font-size: 1.2rem;
+    padding-right: 20px;
+  }
+  .nav__menu li a {
+    font-size: 1.1rem;
+  }
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .intro__content_right {
+    margin-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .green-theme {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__intro :first-child,
+  .header__intro :last-child {
+    width: 100%;
+  }
+  .feedback__right {
+    padding-left: 0px;
+  }
+  .services__items {
+    margin-top: 20px;
+  }
+  .services__item.active .item__title {
+    font-size: 1.3em;
+  }
+  .services__item.active .item__title .end {
+    font-size: 1.4em;
+  }
+  .services__item.active .item__title img {
+    width: 30px;
+  }
+  .item__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .item__content img {
+    margin: 0;
+  }
+  .item__content .service__text {
+    padding: 0 0 0 10px;
+  }
+  .item__content .service__text p {
+    font-size: 1.1rem;
+  }
+  .feedback {
+    padding: 50px 20px;
+  }
+  .feedback h2 {
+    margin-top: 0;
+  }
+  .swiper-slide-prev .comment {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .feedback__content_left {
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 860px) {
   body.lock {
     overflow: hidden;
@@ -1130,6 +1203,13 @@ footer .footer__about p:last-child {
   .feedback {
     padding: 50px 20px;
   }
+  .feedback .swiper-container {
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    margin-left: 30px;
+  }
   .feedback h2 {
     margin-top: 0;
   }
@@ -1208,6 +1288,46 @@ footer .footer__about p:last-child {
   }
 }
 
+@media (max-width: 900px) {
+  .feedback .feedback__right {
+    width: 100%;
+  }
+  .feedback .swiper-wrapper {
+    width: 100% !important;
+  }
+  .feedback .feedback__item img {
+    display: none;
+  }
+  .feedback .swiper-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+  }
+  .feedback .swiper-slide {
+    width: 100% !important;
+  }
+  .feedback .swiper-slide .comment {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .feedback .swiper-button-prev {
+    top: 50%;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .feedback .swiper-button-next {
+    top: 50%;
+    left: 96%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @media (max-width: 760px) {
   .team .team__member {
     margin: 30px 0;
@@ -1226,74 +1346,14 @@ footer .footer__about p:last-child {
   .team .swiper-pagination-bullet-active {
     background: #bc5757;
   }
+  .feedback .swiper-button-prev {
+    left: -2%;
+  }
 }
 
-@media (max-width: 1000px) {
-  .header__nav.is-scroll .logo a {
-    font-size: 1.2rem;
-    padding-right: 20px;
-  }
-  .nav__menu li a {
-    font-size: 1.1rem;
-  }
-  footer {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .intro__content_right {
-    margin-top: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .green-theme {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .header__intro :first-child,
-  .header__intro :last-child {
-    width: 100%;
-  }
-  .feedback__right {
-    padding-left: 0px;
-  }
-  .services__items {
-    margin-top: 20px;
-  }
-  .services__item.active .item__title {
-    font-size: 1.3em;
-  }
-  .services__item.active .item__title .end {
-    font-size: 1.4em;
-  }
-  .services__item.active .item__title img {
-    width: 30px;
-  }
-  .item__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .item__content img {
-    margin: 0;
-  }
-  .item__content .service__text {
-    padding: 0 0 0 10px;
-  }
-  .item__content .service__text p {
-    font-size: 1.1rem;
-  }
-  .feedback {
-    padding: 50px 20px;
-  }
-  .feedback h2 {
-    margin-top: 0;
-  }
-  .feedback__content_left {
-    margin-bottom: 50px;
+@media (max-width: 400px) {
+  .feedback .swiper-button-prev {
+    left: -4%;
   }
 }
 /*# sourceMappingURL=style.css.map */
